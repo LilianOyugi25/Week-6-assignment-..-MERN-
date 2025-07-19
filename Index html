@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CropConnect - Western Kenya</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>🌱 CropConnect</h1>
+      <p>Real-time chat for Western Kenya farmers</p>
+    </header>
+
+    <div id="chat-window"></div>
+
+    <form id="message-form">
+      <input 
+        type="text" 
+        id="message-input" 
+        placeholder="Share maize prices or ask for advice..." 
+        required
+      >
+      <button type="submit">Send</button>
+    </form>
+  </div>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
